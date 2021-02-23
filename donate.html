@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Final_Assignment</title>
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <script src="js/donate.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <div id="header4">
+      <div id="logo">
+        <div id="logo_text">		 
+          <h1><a href="Home.html"><span class="logo_colour">HelpInNeed</span></a></h1>
+          
+        </div>
+      
+        <div id="menubar">
+          <ul id="menu">
+      
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="ourwork.html">Our Work</a></li>
+            <li ><a href="contactus.html">Contact us</a></li>
+            <li class="donate"><a href="donate.html" >DONATE</a></li>
+          </ul>
+        </div>
+	    </div>
+    </div>
+    <div id="site_content">
+      
+        <p>Your small donation can change anothers life!</p><img src="images/donate.png" class ="right" width="600px" height="250px">
+        <form onsubmit="return(validate())" method="post" name="contact" action="php/donate.php">
+          <div class="form_settings">
+            <p><span>Name</span><input class="contact" type="text" name="name" placeholder="First Name  Last Name" /></p>
+            <p><span>Email Address</span><input class="contact" type="text" name="email" placeholder="Email" /></p>
+            <p><span>Card Number</span><input class="contact" type="text" name="card" placeholder="Number" /></p>
+			      <p><span>Expiry Date</span><input class="contact" type="text" name="ed" placeholder="MM/YY" /></p>
+            <p><span>CVC</span><input class="contact" type="text" name="cvc" value="" /></p>
+            <p><span>AMOUNT</span><input class="contact" type="text" name="amount" placeholder="$USD" /></p>
+            <p style="padding-top: 15px"><input class="submit" type="submit" name="donate" value="Donate" /></p>
+          </div>
+        </form>  
+    </div>
+	
+    <div id="footer">
+      <p><a href="Home.html">Home</a> | <a href="aboutus.html">About Us</a> | <a href="ourwork.html">Our Work</a> | <a href="contactus.html">Contact Us</a> | <a href="donate.html">Donate</a></p>
+      <p>We are a non profit organization </p>
+    </div>
+  </div>
+</body>
+</html>
